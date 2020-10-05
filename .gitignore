@@ -1,0 +1,8 @@
+/target/
+/test-output/
+.classpath
+*.log
+debug.log
+.idea/workspace.xml
+debug.log
+debug.log

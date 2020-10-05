@@ -1,5 +1,7 @@
 package com.qa.interestsmart.pages;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
@@ -91,6 +93,17 @@ public class SignInToApplication extends BasePage {
 
 	private By signInHereButton = By.xpath("//a[contains(text(),'Sign in here')]");
 
+	private By userName = By.xpath("//div[@class='app-layout__action']//div[@class='user']");
+	private By profileDropdownItem = By.xpath("//a[@class='dropdown-menu__link my-profile-c']");
+
+	private By firstNameProfileDetail = By.id("first_name");
+	private By lastNameProfileDetail = By.id("last_name");
+	private By emailProfileDetail = By.id("email");
+	private By phoneProfileDetail = By.id("phone");
+	private By saveProfileButton = By.id("profile_save");
+	private By updateProfileMessage = By.className("alert-data text-center");
+	private By clickOk = By.xpath("//button[contains(text(),'OK')]");
+
 	// Constructor of the page
 	public SignInToApplication(WebDriver driver) {
 		elementUtil = new ElementUtil(driver);
@@ -99,7 +112,7 @@ public class SignInToApplication extends BasePage {
 		softAssert = new SoftAssert();
 		javascriptutil = new JavaScriptUtil(driver);
 	}
-
+	
 	// Actions:
 
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication() {
@@ -267,6 +280,35 @@ public class SignInToApplication extends BasePage {
 		}
 		// CommonUtil.LongWait();
 		// elementUtil.clickWhenReady(downArrowForUserSetting, 20);
+	}
+
+	public void openUserProfile() {
+		CommonUtil.shortWait();
+		elementUtil.doClick(userName);
+		logger.info("Click on User Profile");
+		elementUtil.clickWhenReady(profileDropdownItem, 20);
+	}
+
+	public void updateProfile(String firstName, String lastName) {
+		elementUtil.clearField(firstNameProfileDetail);
+		elementUtil.doActionsSendKeys(firstNameProfileDetail, firstName);
+
+		elementUtil.clearField(lastNameProfileDetail);
+		elementUtil.doActionsSendKeys(lastNameProfileDetail, lastName);
+
+		elementUtil.clickWhenReady(saveProfileButton, 20);				
+		elementUtil.clickWhenReady(clickOk, 50);
+		logger.info("Your profile has been successfully updated");
+
+	}
+
+	public void verifyProfile(String firstName, String lastName) {
+		openUserProfile();
+		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");
+		String actualLastName = elementUtil.getElement(lastNameProfileDetail).getAttribute("value");
+		
+		assertEquals(firstName, actualFirstName);
+		assertEquals(lastName, actualLastName);	
 	}
 
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication(String username, String password) {
