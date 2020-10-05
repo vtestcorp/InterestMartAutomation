@@ -1,0 +1,14 @@
+2020-Sep-11 18:06:11 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-11 18:06:11 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 18:06:11 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-11 18:06:21 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 18:06:21 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 18:06:21 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_02_User_Signin_to_aplication_with_Invalid_emailId_and_Valid_password started!
+2020-Sep-11 18:06:21 PM [TestNG-tests-1] INFO  com.qa.interestsmart.tests.SignInWithUsernamePasswordTest - Test case started: tc_06_check_time_to_Signin_to_aaplication_with_correct_emailId_and_password
+2020-Sep-11 18:06:23 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Clicked on Sign In button on the landing page
+2020-Sep-11 18:06:23 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Sending user email id into email filed as -> aaclxz@mailinator.com
+2020-Sep-11 18:06:23 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Sending user password into email filed as -> 123456
+2020-Sep-11 18:06:23 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - After entering user's invalid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-11 18:06:24 PM [TestNG-tests-1] INFO  com.qa.interestsmart.tests.SignInWithUsernamePasswordTest - Test case Ended: tc_06_check_time_to_Signin_to_aaplication_with_correct_emailId_and_password
+2020-Sep-11 18:06:24 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_02_User_Signin_to_aplication_with_Invalid_emailId_and_Valid_password passed!
+2020-Sep-11 18:06:25 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

@@ -1,0 +1,6 @@
+2020-Sep-24 11:16:18 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-24 11:16:18 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-24 11:16:27 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-24 11:16:27 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-24 11:16:28 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-24 11:19:34 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page

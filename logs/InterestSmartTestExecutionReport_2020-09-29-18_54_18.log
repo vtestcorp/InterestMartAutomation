@@ -1,0 +1,12 @@
+2020-Sep-29 18:54:19 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-29 18:54:19 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-29 18:54:36 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-29 18:54:36 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-29 18:54:36 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-29 18:54:40 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-29 18:54:42 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-29 18:54:42 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-29 18:54:46 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-29 18:54:46 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to login into the application
+2020-Sep-29 18:54:46 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user first name after successful login as -> sud
+2020-Sep-29 18:54:46 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user last name after successful login as -> singh

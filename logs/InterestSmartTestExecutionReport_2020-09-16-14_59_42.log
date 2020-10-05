@@ -1,0 +1,10 @@
+2020-Sep-16 14:59:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 14:59:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-16 14:59:52 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 14:59:52 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 14:59:54 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 14:59:57 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> aaclxz@mailinator.com
+2020-Sep-16 14:59:57 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-16 14:59:59 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-16 14:59:59 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Sep-16 14:59:59 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.

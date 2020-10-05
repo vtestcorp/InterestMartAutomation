@@ -1,0 +1,6 @@
+2020-Oct-01 22:42:26 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:42:26 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-01 22:42:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:42:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:42:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:42:43 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page

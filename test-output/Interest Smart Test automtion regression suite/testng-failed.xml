@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Interest Smart Test Automtion Regression Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.interestsmart.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.interestsmart.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="Sign In With Username Password Test On Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.interestsmart.tests.SignInToApplicationTest">
+        <methods>
+          <include name="tc_01_User_Signin_to_application_with_Valid_emailId_and_Valid_password_and_signout_application"/>
+          <include name="tc_02_User_is_unable_to_Signin_application_with_Invalid_emailId_and_Valid_password"/>
+          <include name="tc_03_User_is_unable_to_Signin_application_with_Valid_emailId_and_Invalid_password"/>
+          <include name="tc_04_User_Signin_to_aplication_with_valid_emailId_and_valid_password_from_facebook_and_signout_application"/>
+        </methods>
+      </class> <!-- com.qa.interestsmart.tests.SignInToApplicationTest -->
+    </classes>
+  </test> <!-- Sign In With Username Password Test On Chrome -->
+</suite> <!-- Failed suite [Interest Smart Test Automtion Regression Suite] -->

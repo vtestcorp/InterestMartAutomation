@@ -1,0 +1,11 @@
+2020-Sep-11 16:49:24 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-11 16:49:24 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 16:49:24 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-11 16:49:34 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 16:49:34 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 16:49:34 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_01_check_time_to_Signin_to_aplication_with_correct_emailId_and_password started!
+2020-Sep-11 16:49:34 PM [TestNG-tests-1] INFO  com.qa.interestsmart.tests.SignInWithUsernamePasswordTest - Test case started: tc_06_check_time_to_Signin_to_aaplication_with_correct_emailId_and_password
+2020-Sep-11 16:49:36 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Clicked on Sign In button
+2020-Sep-11 16:49:38 PM [TestNG-tests-1] INFO  com.qa.interestsmart.tests.SignInWithUsernamePasswordTest - Test case Ended: tc_06_check_time_to_Signin_to_aaplication_with_correct_emailId_and_password
+2020-Sep-11 16:49:38 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_01_check_time_to_Signin_to_aplication_with_correct_emailId_and_password passed!
+2020-Sep-11 16:49:38 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

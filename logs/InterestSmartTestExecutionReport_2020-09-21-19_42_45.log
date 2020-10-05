@@ -1,0 +1,13 @@
+2020-Sep-21 19:42:46 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-21 19:42:46 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-21 19:42:46 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-21 19:42:55 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-21 19:42:55 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-21 19:42:55 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_07_SearchLoan_ByInValidAddress started!
+2020-Sep-21 19:42:57 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-21 19:42:58 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-21 19:42:58 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-21 19:43:01 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-21 19:43:09 PM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-21 19:44:40 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_07_SearchLoan_ByInValidAddress passed!
+2020-Sep-21 19:44:40 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

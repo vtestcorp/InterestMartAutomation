@@ -1,0 +1,8 @@
+2020-Sep-14 08:52:53 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 08:52:53 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-14 08:53:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 08:53:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 08:53:03 AM [main] INFO  com.qa.interestsmart.tests.SignInToApplicationTest - Test case started: tc_01_User_Signin_to_aplication_with_Valid_emailId_and_Valid_password
+2020-Sep-14 08:53:04 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-14 08:53:25 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 08:53:25 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome

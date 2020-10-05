@@ -1,0 +1,18 @@
+2020-Sep-16 11:30:46 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 11:30:46 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-16 11:30:56 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 11:30:56 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 11:30:57 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-16 11:30:58 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on "Sign in with Facebook" button
+2020-Sep-16 11:31:09 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - 1. User First Name after login is Tejas
+2020-Sep-16 11:31:09 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - 2. User Last Name after login is Ghad
+2020-Sep-16 11:31:10 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-16 11:31:11 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-16 11:31:12 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 11:31:13 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-16 11:31:13 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-16 11:31:15 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-16 11:31:15 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to login into the application
+2020-Sep-16 11:31:16 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user first name after successful login as -> er
+2020-Sep-16 11:31:16 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user last name after successful login as -> fds
+2020-Sep-16 11:31:24 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to logout from the application

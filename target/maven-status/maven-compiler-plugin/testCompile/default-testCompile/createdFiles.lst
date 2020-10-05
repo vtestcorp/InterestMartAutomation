@@ -1,0 +1,15 @@
+com\qa\interestsmart\tests\TC_05_Login_ValidEmail_InvalidPassword.class
+com\qa\interestsmart\tests\TC_07_SearchLoan_ByValidAddress.class
+com\qa\interestsmart\tests\TC_08_SearchLoan_ByInValidAddress.class
+com\qa\interestsmart\tests\TC_11_Search_Address_Without_Login_Then_Login.class
+com\qa\interestsmart\tests\TC_01.class
+com\qa\interestsmart\tests\LandingPageTest.class
+com\qa\interestsmart\tests\SignInPageTest.class
+com\qa\interestsmart\tests\TC_02_LoginFacebook_Verify_FirstName_LastName_Logout.class
+com\qa\interestsmart\tests\TC_12_Submit_Loan.class
+com\qa\interestsmart\tests\TC_03_Login_ValidEmail_ValidPassword.class
+com\qa\interestsmart\tests\TC_04_Login_InvalidEmail_ValidPassword.class
+com\qa\interestsmart\tests\TC_09_Verify_MonthlyPayment_RemainingBalance.class
+com\qa\interestsmart\tests\TC_06_InvalidEmail_InvalidPassword.class
+com\qa\interestsmart\tests\TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario.class
+com\qa\interestsmart\tests\SignInToApplicationTest.class

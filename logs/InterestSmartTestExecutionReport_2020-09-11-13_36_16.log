@@ -1,0 +1,7 @@
+2020-Sep-11 13:36:17 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-11 13:36:17 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 13:36:17 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-11 13:36:29 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 13:36:29 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - verifyLandingPageTitleTest started!
+2020-Sep-11 13:36:29 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - verifyLandingPageTitleTest passed!
+2020-Sep-11 13:36:30 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

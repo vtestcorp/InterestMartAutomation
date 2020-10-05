@@ -1,0 +1,4 @@
+2020-Sep-16 19:35:14 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-16 19:35:14 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - LoginFacebook_Verify_FirstName_LastName_Logout failed!
+2020-Sep-16 19:35:14 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - LoginFacebook_Verify_FirstName_LastName_Logout failed!
+2020-Sep-16 19:35:14 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

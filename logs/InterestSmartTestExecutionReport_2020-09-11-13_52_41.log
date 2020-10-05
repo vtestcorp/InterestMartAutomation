@@ -1,0 +1,10 @@
+2020-Sep-11 13:52:41 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-11 13:52:41 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 13:52:41 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-11 13:52:51 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 13:52:51 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - verifyLandingPageTitleTest started!
+2020-Sep-11 13:52:51 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.LandingPage - Landing page title is InterestSmart
+2020-Sep-11 13:52:51 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - verifyLandingPageTitleTest failed!
+2020-Sep-11 13:52:52 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-11 13:52:52 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Attaching screenshot in extent report for failed testcase name -> verifyLandingPageTitleTest
+2020-Sep-11 13:52:53 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

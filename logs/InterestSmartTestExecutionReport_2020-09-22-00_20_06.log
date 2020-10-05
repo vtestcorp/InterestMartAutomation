@@ -1,0 +1,22 @@
+2020-Sep-22 00:20:07 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-22 00:20:07 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-22 00:20:07 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-22 00:20:16 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-22 00:20:16 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-22 00:20:16 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_09_Verify_MonthlyPayment_RemainingBalance started!
+2020-Sep-22 00:20:19 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-22 00:20:19 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-22 00:20:20 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-22 00:20:22 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-22 00:20:31 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-22 00:21:09 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_09_Verify_MonthlyPayment_RemainingBalance passed!
+2020-Sep-22 00:21:09 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-22 00:21:09 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-22 00:21:18 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-22 00:21:18 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-22 00:21:18 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario started!
+2020-Sep-22 00:21:20 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-22 00:21:20 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-22 00:21:21 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-22 00:21:23 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-22 00:21:32 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase

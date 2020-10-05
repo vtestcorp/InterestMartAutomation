@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Interest Smart Test Automtion Regression Suite]">
+  <listeners>
+    <listener class-name="com.qa.interestsmart.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.interestsmart.listeners.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Sign In With Username Password Test On Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.interestsmart.tests.TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.interestsmart.tests.TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario -->
+      <class name="com.qa.interestsmart.tests.TC_08_SearchLoan_ByInValidAddress">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TC_08_SearchLoan_ByInValidAddress"/>
+        </methods>
+      </class> <!-- com.qa.interestsmart.tests.TC_08_SearchLoan_ByInValidAddress -->
+    </classes>
+  </test> <!-- Sign In With Username Password Test On Chrome(failed) -->
+</suite> <!-- Failed suite [Interest Smart Test Automtion Regression Suite] -->

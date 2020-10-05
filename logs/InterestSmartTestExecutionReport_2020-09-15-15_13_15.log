@@ -1,0 +1,40 @@
+2020-Sep-15 15:13:15 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:15 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-15 15:13:25 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:25 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:25 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case started: tc_01_check_sign_in_button_on_landing_page_is_redirecting_sign_in_page
+2020-Sep-15 15:13:27 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-15 15:13:27 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case Ended: tc_01_check_sign_in_button_on_landing_page_is_redirecting_sign_in_page
+2020-Sep-15 15:13:29 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:29 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-15 15:13:38 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:38 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:38 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case started: tc_02_check_emailId_and_passowrd_field_is_displayed_sign_in_page
+2020-Sep-15 15:13:40 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-15 15:13:41 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case Ended: tc_02_check_emailId_and_passowrd_field_is_displayed_sign_in_page
+2020-Sep-15 15:13:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:42 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-15 15:13:51 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:51 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:51 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case started: tc_03_check_tooltip_for_blank_emailId_and_blank_password_field_is_dispalyed
+2020-Sep-15 15:13:52 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-15 15:13:53 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case Ended: tc_03_check_tooltip_for_blank_emailId_and_blank_password_field_is_dispalyed
+2020-Sep-15 15:13:55 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:13:55 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-15 15:14:03 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:03 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:03 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case started: tc_04_check_tooltip_for_spaces_in_emailId_and_password_field_is_displayed
+2020-Sep-15 15:14:05 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-15 15:14:06 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case Ended: tc_04_check_tooltip_for_spaces_in_emailId_and_password_field_is_displayed
+2020-Sep-15 15:14:07 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:07 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-15 15:14:16 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:16 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:16 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case started: tc_05_check_tooltip_for_blank_password_field_is_displayed
+2020-Sep-15 15:14:18 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-15 15:14:19 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:19 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-15 15:14:28 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:28 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-15 15:14:28 PM [main] INFO  com.qa.interestsmart.tests.SignInPageTest - Test case started: tc_06_check_time_to_Signin_to_aaplication_with_correct_emailId_and_password
+2020-Sep-15 15:14:30 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button

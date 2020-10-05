@@ -1,0 +1,41 @@
+2020-Sep-16 13:40:33 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 13:40:33 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-16 13:40:43 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 13:40:43 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 13:40:45 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Sep-16 13:40:46 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on "Sign in with Facebook" button
+2020-Sep-16 13:40:55 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - 1. User First Name after login is Tejas
+2020-Sep-16 13:40:55 PM [main] INFO  com.qa.interestsmart.pages.SignInPage - 2. User Last Name after login is Ghad
+2020-Sep-16 13:40:56 PM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-16 13:40:57 PM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-16 13:40:59 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 13:40:59 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-16 13:40:59 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-16 13:41:01 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-16 13:41:02 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to login into the application
+2020-Sep-16 13:41:02 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user first name after successful login as -> er
+2020-Sep-16 13:41:02 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user last name after successful login as -> fds
+2020-Sep-16 13:41:09 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to logout from the application
+2020-Sep-16 13:41:09 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 13:41:13 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> aaclxz@mailinator.com
+2020-Sep-16 13:41:13 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-16 13:41:15 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-16 13:41:15 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Sep-16 13:41:15 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Sep-16 13:41:15 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 13:41:15 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-16 13:41:16 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 1a2b3c
+2020-Sep-16 13:41:18 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page
+2020-Sep-16 13:41:18 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Sep-16 13:41:24 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Sep-16 13:41:24 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 13:41:24 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> aaclxz@mailinator.com
+2020-Sep-16 13:41:25 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-16 13:41:26 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-16 13:41:26 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Sep-16 13:41:26 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Sep-16 13:41:27 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-16 13:41:28 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-16 13:41:28 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-16 13:41:30 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-16 13:41:39 PM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase

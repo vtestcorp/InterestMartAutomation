@@ -1,0 +1,28 @@
+[0910/094631.152:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0910/094631.155:ERROR:exception_snapshot_win.cc(100)] thread ID 13836 not found in process
+[0910/094631.163:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/094631.163:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/094631.163:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/094631.164:ERROR:file_io_win.cc(171)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\reports\3663498c-80b3-455d-bcc2-4dd378f3a55c.dmp: The system cannot find the path specified. (0x3)
+[0910/094631.164:ERROR:crash_report_exception_handler.cc(120)] PrepareNewCrashReport failed
+[0910/094631.321:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0910/094631.321:ERROR:exception_snapshot_win.cc(100)] thread ID 17348 not found in process
+[0910/094631.335:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/094631.336:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/094631.336:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/094631.336:ERROR:file_io_win.cc(171)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir11880_1230717780\Crashpad\reports\1f4cfd17-7f82-4264-a3d8-9815c295f435.dmp: The system cannot find the path specified. (0x3)
+[0910/094631.336:ERROR:crash_report_exception_handler.cc(120)] PrepareNewCrashReport failed
+[0910/204709.922:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0910/204709.924:ERROR:exception_snapshot_win.cc(100)] thread ID 21156 not found in process
+[0910/204709.931:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/204709.931:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/204709.931:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/204709.931:ERROR:file_io_win.cc(171)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\reports\305798b5-b6ae-416e-a735-48427e312e21.dmp: The system cannot find the path specified. (0x3)
+[0910/204709.931:ERROR:crash_report_exception_handler.cc(120)] PrepareNewCrashReport failed
+[0910/204710.133:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0910/204710.134:ERROR:exception_snapshot_win.cc(100)] thread ID 12848 not found in process
+[0910/204710.149:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/204710.149:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/204710.149:ERROR:file_io_win.cc(162)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0910/204710.149:ERROR:file_io_win.cc(171)] CreateFile C:\Users\Sarang\AppData\Local\Temp\scoped_dir18384_1481415586\Crashpad\reports\5ba9e508-6639-4cb8-8ae6-9f8976453aa7.dmp: The system cannot find the path specified. (0x3)
+[0910/204710.149:ERROR:crash_report_exception_handler.cc(120)] PrepareNewCrashReport failed

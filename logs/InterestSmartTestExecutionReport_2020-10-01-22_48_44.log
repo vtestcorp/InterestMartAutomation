@@ -1,0 +1,11 @@
+2020-Oct-01 22:48:45 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:48:45 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-01 22:49:02 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:49:02 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:49:02 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-01 22:49:11 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-01 22:49:13 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-01 22:49:13 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-01 22:49:17 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-01 22:49:29 PM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-01 22:49:39 PM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase

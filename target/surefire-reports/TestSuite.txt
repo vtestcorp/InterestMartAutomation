@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 553.493 s <<< FAILURE! - in TestSuite
+com.qa.interestsmart.tests.TC_08_SearchLoan_ByInValidAddress.TC_08_SearchLoan_ByInValidAddress  Time elapsed: 21.102 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [We found your mortgage data!] but found []
+	at com.qa.interestsmart.tests.TC_08_SearchLoan_ByInValidAddress.TC_08_SearchLoan_ByInValidAddress(TC_08_SearchLoan_ByInValidAddress.java:17)
+
+com.qa.interestsmart.tests.TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario.TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario  Time elapsed: 48.176 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Actual Remaining Balance 986.0 is not equal to Expected Remaining balance 985.0 expected [985.0] but found [986.0],
+	Actual Monthly Payment 4.6 is not equal to Expected Monthly Payment 4.77 expected [4.77] but found [4.6]
+	at com.qa.interestsmart.tests.TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario.TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario(TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario.java:29)
+

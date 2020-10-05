@@ -1,0 +1,154 @@
+2020-Oct-02 00:49:13 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Oct-02 00:49:13 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:49:13 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:49:27 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:49:27 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:49:27 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:49:27 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_01_Search_Address_Without_Login_Then_Login started!
+2020-Oct-02 00:49:33 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:50:08 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:50:18 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:50:24 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:50:24 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:50:25 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:50:26 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:50:29 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:50:29 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to login into the application
+2020-Oct-02 00:50:29 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user first name after successful login as -> sud20
+2020-Oct-02 00:50:29 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user last name after successful login as -> singh
+2020-Oct-02 00:50:34 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to logout from the application
+2020-Oct-02 00:50:34 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_01_Search_Address_Without_Login_Then_Login passed!
+2020-Oct-02 00:50:34 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:50:34 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:50:46 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:50:46 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:50:46 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:50:46 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_01_LoginFacebook_Verify_FirstName_LastName_Logout started!
+2020-Oct-02 00:50:50 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on Sign In button
+2020-Oct-02 00:50:51 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - Clicked on "Sign in with Facebook" button
+2020-Oct-02 00:51:00 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - 1. User First Name after login is Tejas
+2020-Oct-02 00:51:00 AM [main] INFO  com.qa.interestsmart.pages.SignInPage - 2. User Last Name after login is Ghad
+2020-Oct-02 00:51:01 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:51:01 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:51:03 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_01_LoginFacebook_Verify_FirstName_LastName_Logout passed!
+2020-Oct-02 00:51:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:51:10 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:10 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:10 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:10 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_03_Login_ValidEmail_ValidPassword started!
+2020-Oct-02 00:51:12 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:51:12 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:51:12 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:51:14 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:51:14 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to login into the application
+2020-Oct-02 00:51:14 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user first name after successful login as -> er
+2020-Oct-02 00:51:14 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user last name after successful login as -> fds
+2020-Oct-02 00:51:22 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to logout from the application
+2020-Oct-02 00:51:22 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_03_Login_ValidEmail_ValidPassword passed!
+2020-Oct-02 00:51:22 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:22 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:51:29 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:29 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:29 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:29 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_04_Login_InvalidEmail_ValidPassword started!
+2020-Oct-02 00:51:31 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:51:34 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> aaclxz@mailinator.com
+2020-Oct-02 00:51:34 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:51:37 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:51:37 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Oct-02 00:51:37 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Oct-02 00:51:43 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_04_Login_InvalidEmail_ValidPassword passed!
+2020-Oct-02 00:51:43 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:43 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:51:50 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:50 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:50 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:51:50 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_05_Login_ValidEmail_InvalidPassword started!
+2020-Oct-02 00:51:52 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:51:52 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:51:52 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 1a2b3c
+2020-Oct-02 00:51:54 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page
+2020-Oct-02 00:51:54 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Oct-02 00:52:00 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Oct-02 00:52:06 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_05_Login_ValidEmail_InvalidPassword passed!
+2020-Oct-02 00:52:06 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:06 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:52:15 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:15 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:15 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:15 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_06_InvalidEmail_InvalidPassword started!
+2020-Oct-02 00:52:16 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:52:16 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:52:17 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 1a2b3c
+2020-Oct-02 00:52:18 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page
+2020-Oct-02 00:52:18 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Oct-02 00:52:24 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and invalid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Oct-02 00:52:30 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_06_InvalidEmail_InvalidPassword passed!
+2020-Oct-02 00:52:30 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:30 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:52:38 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:38 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:38 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:52:38 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_07_SearchLoan_ByValidAddress started!
+2020-Oct-02 00:52:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:52:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:52:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:52:43 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:52:51 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:53:01 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:53:01 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_07_SearchLoan_ByValidAddress passed!
+2020-Oct-02 00:53:01 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:01 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:53:09 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:09 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:09 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:09 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_08_SearchLoan_ByInValidAddress started!
+2020-Oct-02 00:53:11 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:53:11 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:53:11 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:53:13 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:53:22 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:53:31 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:53:32 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_08_SearchLoan_ByInValidAddress failed!
+2020-Oct-02 00:53:32 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:53:32 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Attaching screenshot in extent report for failed testcase name -> TC_08_SearchLoan_ByInValidAddress
+2020-Oct-02 00:53:32 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:32 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:53:41 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:41 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:41 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:53:41 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_09_Verify_MonthlyPayment_RemainingBalance started!
+2020-Oct-02 00:53:42 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:53:43 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:53:43 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:53:45 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:53:53 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:54:31 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_09_Verify_MonthlyPayment_RemainingBalance passed!
+2020-Oct-02 00:54:31 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:54:31 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:54:40 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:54:40 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:54:40 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:54:40 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario started!
+2020-Oct-02 00:54:42 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:54:43 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:54:43 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:54:46 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:54:54 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:55:29 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario failed!
+2020-Oct-02 00:55:30 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Oct-02 00:55:30 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Attaching screenshot in extent report for failed testcase name -> TC_10_Verify_MonthlyPayment_RemainingBalance_NegativeScenario
+2020-Oct-02 00:55:30 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:55:30 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:55:38 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:55:38 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:55:38 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:55:38 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_12_Submit_Loan started!
+2020-Oct-02 00:55:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Oct-02 00:55:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> test03@mailinator.com
+2020-Oct-02 00:55:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Oct-02 00:55:40 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's valid email id and valid password clicked on Sign In button on Signin page
+2020-Oct-02 00:55:42 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - User is successfully able to login into the application
+2020-Oct-02 00:55:42 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user first name after successful login as -> sud20
+2020-Oct-02 00:55:42 AM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Fetched user last name after successful login as -> singh

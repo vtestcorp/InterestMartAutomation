@@ -1,0 +1,3 @@
+2020-Sep-16 18:10:45 PM [TestNG] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-16 18:10:45 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 18:10:45 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome

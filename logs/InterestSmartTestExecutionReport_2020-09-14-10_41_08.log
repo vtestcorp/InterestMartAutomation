@@ -1,0 +1,15 @@
+2020-Sep-14 10:41:08 AM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-14 10:41:08 AM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 10:41:08 AM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-14 10:41:21 AM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 10:41:21 AM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-14 10:41:21 AM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_05_User_Signin_to_aplication_with_valid_emailId_and_valid_password_from_gmail_and_signout_application started!
+2020-Sep-14 10:41:21 AM [TestNG-tests-1] INFO  com.qa.interestsmart.tests.SignInToApplicationTest - Test case started: tc_05_User_Signin_to_aplication_with_valid_emailId_and_valid_password_from_gmail_and_signout_application
+2020-Sep-14 10:41:23 AM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button
+2020-Sep-14 10:41:23 AM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on "Sign in with Gmail" button
+2020-Sep-14 10:41:23 AM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInToApplication - Switched to the Gmail window
+2020-Sep-14 10:41:26 AM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInToApplication - Entered EmailId in the gmail window as -> sarang@vtestcorp.com
+2020-Sep-14 10:41:27 AM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_05_User_Signin_to_aplication_with_valid_emailId_and_valid_password_from_gmail_and_signout_application failed!
+2020-Sep-14 10:41:27 AM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-14 10:41:27 AM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Attaching screenshot in extent report for failed testcase name -> tc_05_User_Signin_to_aplication_with_valid_emailId_and_valid_password_from_gmail_and_signout_application
+2020-Sep-14 10:41:28 AM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

@@ -1,0 +1,10 @@
+2020-Sep-16 21:43:33 PM [TestNG] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-16 21:43:33 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 21:43:33 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_01_User_Signin_to_application_with_Valid_emailId_and_Valid_password_and_signout_application failed!
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_01_User_Signin_to_application_with_Valid_emailId_and_Valid_password_and_signout_application failed!
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
+2020-Sep-16 21:43:43 PM [TestNG] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

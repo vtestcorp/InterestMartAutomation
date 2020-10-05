@@ -1,0 +1,14 @@
+2020-Sep-11 17:15:37 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-11 17:15:37 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 17:15:37 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-11 17:15:47 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 17:15:47 PM [TestNG-tests-1] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-11 17:15:47 PM [TestNG-tests-1] INFO  com.qa.interestsmart.listeners.ExtentReportListener - tc_01_check_time_to_Signin_to_aplication_with_correct_emailId_and_password started!
+2020-Sep-11 17:15:47 PM [TestNG-tests-1] INFO  com.qa.interestsmart.tests.SignInWithUsernamePasswordTest - Test case started: tc_06_check_time_to_Signin_to_aaplication_with_correct_emailId_and_password
+2020-Sep-11 17:15:48 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Clicked on Sign In button on the landing page
+2020-Sep-11 17:15:48 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Sending user email id into email filed as -> test03@mailinator.com
+2020-Sep-11 17:15:49 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Sending user password into email filed as -> 123456
+2020-Sep-11 17:15:49 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - After entering user's email id and password clicked on Sign In button on Signin page
+2020-Sep-11 17:15:50 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - User is successfully able to login into the application
+2020-Sep-11 17:15:50 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Fetching user first name after successful login as -> er
+2020-Sep-11 17:15:50 PM [TestNG-tests-1] INFO  com.qa.interestsmart.pages.SignInWithUsernamePassword - Fetching user last name after successful login as -> fds

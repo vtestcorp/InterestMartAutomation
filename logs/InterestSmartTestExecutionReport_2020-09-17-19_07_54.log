@@ -1,0 +1,14 @@
+2020-Sep-17 19:07:55 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Sep-17 19:07:55 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-17 19:07:55 PM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Sep-17 19:08:04 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-17 19:08:04 PM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Sep-17 19:08:04 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - InvalidEmail_ValidPassword started!
+2020-Sep-17 19:08:06 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Clicked on Sign In button on the landing page
+2020-Sep-17 19:08:09 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user email id into email filed as -> aaclxz@mailinator.com
+2020-Sep-17 19:08:09 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - Sending user password into email filed as -> 123456
+2020-Sep-17 19:08:11 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page
+2020-Sep-17 19:08:11 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message is -> These credentials do not match our records.
+2020-Sep-17 19:08:11 PM [main] INFO  com.qa.interestsmart.pages.SignInToApplication - After entering user's invalid email id and valid password clicked on Sign In button on Signin page tooltip message appears with text -> These credentials do not match our records.
+2020-Sep-17 19:08:17 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - InvalidEmail_ValidPassword passed!
+2020-Sep-17 19:08:18 PM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite is ending!

@@ -1,0 +1,8 @@
+2020-Oct-02 00:46:45 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - Test Suite started!
+2020-Oct-02 00:46:45 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:46:45 AM [main] INFO  com.qa.interestsmart.base.BasePage - Browser Name is : chrome
+2020-Oct-02 00:47:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:47:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:47:03 AM [main] INFO  com.qa.interestsmart.base.BasePage - Running on Environment: QA
+2020-Oct-02 00:47:03 AM [main] INFO  com.qa.interestsmart.listeners.ExtentReportListener - TC_01_Search_Address_Without_Login_Then_Login started!
+2020-Oct-02 00:47:10 AM [main] INFO  com.qa.interestsmart.base.BasePage - Capturing Screenshot for failed testcase
