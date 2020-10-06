@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -95,7 +96,7 @@ public class SignInToApplication extends BasePage {
 
 	private By userName = By.xpath("//div[@class='app-layout__action']//div[@class='user']");
 	private By profileDropdownItem = By.xpath("//a[@class='dropdown-menu__link my-profile-c']");
-
+//ProfileDetails
 	private By firstNameProfileDetail = By.id("first_name");
 	private By lastNameProfileDetail = By.id("last_name");
 	private By emailProfileDetail = By.id("email");
@@ -103,6 +104,11 @@ public class SignInToApplication extends BasePage {
 	private By saveProfileButton = By.id("profile_save");
 	private By updateProfileMessage = By.className("alert-data text-center");
 	private By clickOk = By.xpath("//button[contains(text(),'OK')]");
+	private By updatedpassword = By.id("password");
+	private By updatedConfirmPassword = By.id("password_confirmation");
+	
+	private By clickContinue =By.id("property_exists_btn");
+	private By applicationMessage=By.xpath("//h1[contains(text(),'Application in progress')]");
 
 	// Constructor of the page
 	public SignInToApplication(WebDriver driver) {
@@ -112,7 +118,7 @@ public class SignInToApplication extends BasePage {
 		softAssert = new SoftAssert();
 		javascriptutil = new JavaScriptUtil(driver);
 	}
-	
+
 	// Actions:
 
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication() {
@@ -233,20 +239,38 @@ public class SignInToApplication extends BasePage {
 		logger.info("User is successfully able to logout from the application");
 	}
 
-	public void loginWithValidUsernameAndPassword() {
+	public void verifyLoanApplicationStatus(String address)
+	{
+		javascriptutil.clickElementByJS(driver.findElement(plusButton));		
+		elementUtil.doSendKeys(searchButton,address);
+		CommonUtil.MediumWait();
+		
+		elementUtil.getElement(searchButton).sendKeys(Keys.DOWN, Keys.ENTER);
+		CommonUtil.MediumWait();
+		
+		logger.info("APPLICATION IN PROGRESS ");
+		String actualmessage=elementUtil.getElement(applicationMessage).getText();
+		Assert.assertEquals(actualmessage,"Application in progress");
+		elementUtil.doClick(clickContinue);
+		
+	}
+	
+	
+	public void loginWithValidUsernameAndPassword(String username, String password) {
+
 		try {
 			elementUtil.clickWhenReady(signInButtonOnLandingPage, 20);
 			logger.info("Clicked on Sign In button on the landing page");
 			elementUtil.waitForElementToBeClickable(emailField, 20);
 			elementUtil.waitForElementToBeClickable(passwordField, 20);
-			elementUtil.doActionsSendKeys(emailField, prop.getProperty("validusername1")); // fetching
+			elementUtil.doActionsSendKeys(emailField, username); // fetching
 																							// from
 																							// config.file
-			logger.info("Sending user email id into email filed as -> " + prop.getProperty("validusername"));
-			elementUtil.doActionsSendKeys(passwordField, prop.getProperty("validpassword1")); // fetching
+			logger.info("Sending user email id into email filed as -> " + username);
+			elementUtil.doActionsSendKeys(passwordField, password); // fetching
 																								// from
 																								// config.file
-			logger.info("Sending user password into email filed as -> " + prop.getProperty("validpassword"));
+			logger.info("Sending user password into email filed as -> " + password);
 			elementUtil.clickWhenReady(signInButtonOnSignInPage, 20);
 			logger.info(
 					"After entering user's valid email id and valid password clicked on Sign In button on Signin page");
@@ -280,6 +304,10 @@ public class SignInToApplication extends BasePage {
 		}
 		// CommonUtil.LongWait();
 		// elementUtil.clickWhenReady(downArrowForUserSetting, 20);
+	
+	}
+	public void loginWithValidUsernameAndPassword() {
+		loginWithValidUsernameAndPassword(prop.getProperty("validusername1"), prop.getProperty("validpassword1"));
 	}
 
 	public void openUserProfile() {
@@ -289,26 +317,37 @@ public class SignInToApplication extends BasePage {
 		elementUtil.clickWhenReady(profileDropdownItem, 20);
 	}
 
-	public void updateProfile(String firstName, String lastName) {
+	public void logoutUserProfile()
+	{
+		CommonUtil.shortWait();
+		elementUtil.doClick(userName);
+		logger.info("Click on User Profile");
+		elementUtil.clickWhenReady(logOutLink, 20);
+	}
+	public void updateProfile(String firstName, String lastName, String phone) {
 		elementUtil.clearField(firstNameProfileDetail);
 		elementUtil.doActionsSendKeys(firstNameProfileDetail, firstName);
 
 		elementUtil.clearField(lastNameProfileDetail);
 		elementUtil.doActionsSendKeys(lastNameProfileDetail, lastName);
-
-		elementUtil.clickWhenReady(saveProfileButton, 20);				
+		
+		elementUtil.clearField(phoneProfileDetail);
+		elementUtil.doActionsSendKeys(phoneProfileDetail, phone);
+		
+		elementUtil.clickWhenReady(saveProfileButton, 20);
 		elementUtil.clickWhenReady(clickOk, 50);
 		logger.info("Your profile has been successfully updated");
 
 	}
 
-	public void verifyProfile(String firstName, String lastName) {
+	public void verifyProfile(String firstName, String lastName,String phone) {
 		openUserProfile();
 		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");
 		String actualLastName = elementUtil.getElement(lastNameProfileDetail).getAttribute("value");
-		
+		String actualPhone=elementUtil.getElement(phoneProfileDetail).getAttribute("value");
 		assertEquals(firstName, actualFirstName);
-		assertEquals(lastName, actualLastName);	
+		assertEquals(lastName, actualLastName);
+		assertEquals(phoneProfileDetail, actualPhone);
 	}
 
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication(String username, String password) {
@@ -404,6 +443,18 @@ public class SignInToApplication extends BasePage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void changePasswordUsingProfileDetails(String newPassword) {
+		logger.info("Updated Password -> " + newPassword);
+		elementUtil.clearField(updatedpassword);
+		elementUtil.doActionsSendKeys(updatedpassword, newPassword);
+		elementUtil.clearField(updatedConfirmPassword);
+		elementUtil.doActionsSendKeys(updatedConfirmPassword, newPassword);
+		elementUtil.clickWhenReady(saveProfileButton, 20);
+		elementUtil.clickWhenReady(clickOk, 50);
+		logger.info("Your profile has been successfully updated");
+		
 	}
 
 	public void checkUserUnableLoginWithInvalidUsernameAndInValidPassword() {

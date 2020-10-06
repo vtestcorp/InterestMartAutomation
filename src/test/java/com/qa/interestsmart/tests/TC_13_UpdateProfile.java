@@ -14,9 +14,10 @@ public class TC_13_UpdateProfile extends BaseTest{
     {
         signInToApplication.loginWithValidUsernameAndPassword();
         signInToApplication.openUserProfile();
-        signInToApplication.updateProfile("FirstNameUpdated", "LastNameUpdated");
-        signInToApplication.verifyProfile("FirstNameUpdated", "LastNameUpdated");
-        signInToApplication.updateProfile("sud20", "Singh");
+        signInToApplication.updateProfile("FirstNameUpdated", "LastNameUpdated","903-963-6869");
+        signInToApplication.verifyProfile("FirstNameUpdated", "LastNameUpdated","903-963-6869");
+        signInToApplication.updateProfile("sud20", "Singh","903-962-6866");
+        signInToApplication.logoutUserProfile();
         
     }
 
