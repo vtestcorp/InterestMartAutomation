@@ -106,9 +106,13 @@ public class SignInToApplication extends BasePage {
 	private By clickOk = By.xpath("//button[contains(text(),'OK')]");
 	private By updatedpassword = By.id("password");
 	private By updatedConfirmPassword = By.id("password_confirmation");
+
+	private By clickContinue = By.id("property_exists_btn");
+	private By applicationMessage = By.xpath("//h1[contains(text(),'Application in progress')]");
 	
-	private By clickContinue =By.id("property_exists_btn");
-	private By applicationMessage=By.xpath("//h1[contains(text(),'Application in progress')]");
+	private By documentButton=By.xpath("//span[@class='blue-notification']");
+	private By documentButtonPendingCount=By.xpath("//label[@class='count']");
+	private By pendingItemCount=By.xpath("//span[@class='heading-count']");
 
 	// Constructor of the page
 	public SignInToApplication(WebDriver driver) {
@@ -239,23 +243,44 @@ public class SignInToApplication extends BasePage {
 		logger.info("User is successfully able to logout from the application");
 	}
 
-	public void verifyLoanApplicationStatus(String address)
-	{
-		javascriptutil.clickElementByJS(driver.findElement(plusButton));		
-		elementUtil.doSendKeys(searchButton,address);
+	public void verifyLoanApplicationStatus(String address) {
+		javascriptutil.clickElementByJS(driver.findElement(plusButton));
+		elementUtil.doSendKeys(searchButton, address);
 		CommonUtil.MediumWait();
-		
+
 		elementUtil.getElement(searchButton).sendKeys(Keys.DOWN, Keys.ENTER);
 		CommonUtil.MediumWait();
-		
+
 		logger.info("APPLICATION IN PROGRESS ");
-		String actualmessage=elementUtil.getElement(applicationMessage).getText();
-		Assert.assertEquals(actualmessage,"Application in progress");
+		String actualmessage = elementUtil.getElement(applicationMessage).getText();
+		Assert.assertEquals(actualmessage, "Application in progress");
 		elementUtil.doClick(clickContinue);
+
+	}
+
+	public void verifyDocumentButton() {
+		boolean visible=elementUtil.getElement(documentButton).isDisplayed();
+		logger.info("Document Button Visible Upload Condition");
+		Assert.assertTrue(visible);
 		
 	}
 	
+	public void verifyConditionPendingCount()
+	{
+		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
+		logger.info("Document Button Condition Pending Count");
+		Assert.assertEquals(pendingCount, "1");
+		
+	}
 	
+	public void verifyDocumentButtonConditionPendingCountWithPendingItem()
+	{
+		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
+		String pendingItems=elementUtil.getElement(pendingItemCount).getText();
+		logger.info("Document Button Condition PendingCount same with PendingItem");
+		Assert.assertEquals(pendingCount, pendingItems);
+	}
+
 	public void loginWithValidUsernameAndPassword(String username, String password) {
 
 		try {
@@ -264,12 +289,12 @@ public class SignInToApplication extends BasePage {
 			elementUtil.waitForElementToBeClickable(emailField, 20);
 			elementUtil.waitForElementToBeClickable(passwordField, 20);
 			elementUtil.doActionsSendKeys(emailField, username); // fetching
-																							// from
-																							// config.file
+																	// from
+																	// config.file
 			logger.info("Sending user email id into email filed as -> " + username);
 			elementUtil.doActionsSendKeys(passwordField, password); // fetching
-																								// from
-																								// config.file
+																	// from
+																	// config.file
 			logger.info("Sending user password into email filed as -> " + password);
 			elementUtil.clickWhenReady(signInButtonOnSignInPage, 20);
 			logger.info(
@@ -304,8 +329,9 @@ public class SignInToApplication extends BasePage {
 		}
 		// CommonUtil.LongWait();
 		// elementUtil.clickWhenReady(downArrowForUserSetting, 20);
-	
+
 	}
+
 	public void loginWithValidUsernameAndPassword() {
 		loginWithValidUsernameAndPassword(prop.getProperty("validusername1"), prop.getProperty("validpassword1"));
 	}
@@ -317,39 +343,50 @@ public class SignInToApplication extends BasePage {
 		elementUtil.clickWhenReady(profileDropdownItem, 20);
 	}
 
-	public void logoutUserProfile()
-	{
+	public void logoutUserProfile() {
 		CommonUtil.shortWait();
 		elementUtil.doClick(userName);
 		logger.info("Click on User Profile");
 		elementUtil.clickWhenReady(logOutLink, 20);
 	}
+
 	public void updateProfile(String firstName, String lastName, String phone) {
 		elementUtil.clearField(firstNameProfileDetail);
 		elementUtil.doActionsSendKeys(firstNameProfileDetail, firstName);
 
 		elementUtil.clearField(lastNameProfileDetail);
 		elementUtil.doActionsSendKeys(lastNameProfileDetail, lastName);
-		
+
 		elementUtil.clearField(phoneProfileDetail);
 		elementUtil.doActionsSendKeys(phoneProfileDetail, phone);
-		
+
 		elementUtil.clickWhenReady(saveProfileButton, 20);
 		elementUtil.clickWhenReady(clickOk, 50);
 		logger.info("Your profile has been successfully updated");
 
 	}
 
-	public void verifyProfile(String firstName, String lastName,String phone) {
+	public void verifyProfile(String firstName, String lastName, String phone) {
 		openUserProfile();
 		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");
 		String actualLastName = elementUtil.getElement(lastNameProfileDetail).getAttribute("value");
-		String actualPhone=elementUtil.getElement(phoneProfileDetail).getAttribute("value");
+		String actualPhone = elementUtil.getElement(phoneProfileDetail).getAttribute("value");
 		assertEquals(firstName, actualFirstName);
 		assertEquals(lastName, actualLastName);
 		assertEquals(phoneProfileDetail, actualPhone);
 	}
 
+	public void verifySessionHasExpiredAfterTimeOut()
+	{
+		try {
+			Thread.sleep(480000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication(String username, String password) {
 		// elementUtil.clickWhenReady(signInButtonOnLandingPage, 20);
 		logger.info("Clicked on Sign In button on the landing page");
@@ -454,7 +491,7 @@ public class SignInToApplication extends BasePage {
 		elementUtil.clickWhenReady(saveProfileButton, 20);
 		elementUtil.clickWhenReady(clickOk, 50);
 		logger.info("Your profile has been successfully updated");
-		
+
 	}
 
 	public void checkUserUnableLoginWithInvalidUsernameAndInValidPassword() {
