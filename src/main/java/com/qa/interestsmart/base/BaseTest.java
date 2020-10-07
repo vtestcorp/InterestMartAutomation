@@ -19,7 +19,7 @@ import com.qa.interestsmart.pages.SignInToApplication;
 
 public class BaseTest {
 
-	WebDriver driver;
+	public WebDriver driver;
 	public Properties prop;
 	public BasePage basePage;
 	public LandingPage landingPage;
@@ -47,5 +47,6 @@ public class BaseTest {
 	public void tearDown() {
 		// driver.quit();
 	}
+	
 
 }

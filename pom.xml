@@ -112,6 +112,16 @@
         </dependency>
 		<!-- ************************************************************************ -->
 		<!-- ********************* Logging dependencies End ************************* -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.11.3</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.11.3</version>
+		</dependency>
 
 </dependencies>
 

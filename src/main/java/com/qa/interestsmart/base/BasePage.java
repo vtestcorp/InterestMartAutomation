@@ -21,6 +21,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.qa.interestsmart.utils.ElementUtil;
 import com.qa.interestsmart.utils.OptionsManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,12 +30,13 @@ public class BasePage {
 	
 	private static final Logger logger = LogManager.getLogger(BasePage.class);
 	
-	WebDriver driver;
+	public WebDriver driver;
 	Properties prop;
 	OptionsManager optionsManager;
 	public static String flashElement;
 	public String BROWSER_NAME;
 	public ExtentTest test;
+	public ElementUtil elementUtil;
 	
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 
@@ -87,6 +89,7 @@ public class BasePage {
 		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		getDriver().get(prop.getProperty("url"));
 
+		elementUtil = new ElementUtil(getDriver());
 		return getDriver();
 	}
 

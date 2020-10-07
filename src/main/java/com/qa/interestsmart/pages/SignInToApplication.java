@@ -102,6 +102,8 @@ public class SignInToApplication extends BasePage {
 	private By emailProfileDetail = By.id("email");
 	private By phoneProfileDetail = By.id("phone");
 	private By saveProfileButton = By.id("profile_save");
+	private By cancelProfileButton=By.id("reset_values");
+	
 	private By updateProfileMessage = By.className("alert-data text-center");
 	private By clickOk = By.xpath("//button[contains(text(),'OK')]");
 	private By updatedpassword = By.id("password");
@@ -367,25 +369,32 @@ public class SignInToApplication extends BasePage {
 	}
 
 	public void verifyProfile(String firstName, String lastName, String phone) {
+		
 		openUserProfile();
+		CommonUtil.shortWait();
 		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");
+		
 		String actualLastName = elementUtil.getElement(lastNameProfileDetail).getAttribute("value");
 		String actualPhone = elementUtil.getElement(phoneProfileDetail).getAttribute("value");
 		assertEquals(firstName, actualFirstName);
 		assertEquals(lastName, actualLastName);
-		assertEquals(phoneProfileDetail, actualPhone);
+		assertEquals(phone, actualPhone);
+		elementUtil.clickWhenReady(saveProfileButton, 50);
+		elementUtil.clickWhenReady(clickOk, 50);
 	}
+	
 
 	public void verifySessionHasExpiredAfterTimeOut()
 	{
 		try {
 			Thread.sleep(480000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+		driver.navigate().refresh();
+		String redirecturl=driver.getCurrentUrl();
+		Assert.assertEquals(redirecturl,Constants.SIGNIN_PAGE_URL);
+		System.out.println("");
 	}
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication(String username, String password) {
 		// elementUtil.clickWhenReady(signInButtonOnLandingPage, 20);
