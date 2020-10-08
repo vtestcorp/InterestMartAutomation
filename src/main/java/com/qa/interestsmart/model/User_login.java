@@ -1,4 +1,4 @@
-package com.qa.interestsmart.tests.model;
+package com.qa.interestsmart.model;
 
 public class User_login {
 	public String email;

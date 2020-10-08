@@ -10,6 +10,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -246,6 +247,7 @@ public class SignInToApplication extends BasePage {
 	}
 
 	public void verifyLoanApplicationStatus(String address) {
+		CommonUtil.shortWait();
 		javascriptutil.clickElementByJS(driver.findElement(plusButton));
 		elementUtil.doSendKeys(searchButton, address);
 		CommonUtil.MediumWait();
@@ -260,10 +262,15 @@ public class SignInToApplication extends BasePage {
 
 	}
 
-	public void verifyDocumentButton() {
-		boolean visible=elementUtil.getElement(documentButton).isDisplayed();
-		logger.info("Document Button Visible Upload Condition");
-		Assert.assertTrue(visible);
+	public void verifyDocumentButton(String address) {
+		WebElement button=driver.findElement(By.xpath("//a[contains(text(),'"+address+"')]//following::span[1]"));
+		if(button.isDisplayed())
+		{
+			Assert.assertTrue(true);
+		}
+//		boolean visible=elementUtil.getElement(b).isDisplayed();
+//		logger.info("Document Button Visible Upload Condition");
+		//Assert.assertTrue(visible);
 		
 	}
 	
@@ -352,7 +359,7 @@ public class SignInToApplication extends BasePage {
 		elementUtil.clickWhenReady(logOutLink, 20);
 	}
 
-	public void updateProfile(String firstName, String lastName, String phone) {
+	public void updateProfile(String firstName, String lastName, String phone, String emailAddress) {
 		elementUtil.clearField(firstNameProfileDetail);
 		elementUtil.doActionsSendKeys(firstNameProfileDetail, firstName);
 
@@ -362,23 +369,30 @@ public class SignInToApplication extends BasePage {
 		elementUtil.clearField(phoneProfileDetail);
 		elementUtil.doActionsSendKeys(phoneProfileDetail, phone);
 
+		elementUtil.clearField(emailProfileDetail);
+		elementUtil.doActionsSendKeys(emailProfileDetail, emailAddress);
+		
 		elementUtil.clickWhenReady(saveProfileButton, 20);
 		elementUtil.clickWhenReady(clickOk, 50);
 		logger.info("Your profile has been successfully updated");
 
 	}
 
-	public void verifyProfile(String firstName, String lastName, String phone) {
+	public void verifyProfile(String firstName, String lastName, String phone,String emailAddress) {
 		
 		openUserProfile();
 		CommonUtil.shortWait();
-		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");
-		
+		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");		
 		String actualLastName = elementUtil.getElement(lastNameProfileDetail).getAttribute("value");
 		String actualPhone = elementUtil.getElement(phoneProfileDetail).getAttribute("value");
+		String actualEmail=elementUtil.getElement(emailProfileDetail).getAttribute("value");
+		
 		assertEquals(firstName, actualFirstName);
 		assertEquals(lastName, actualLastName);
 		assertEquals(phone, actualPhone);
+		assertEquals(emailAddress, actualEmail);
+		
+		
 		elementUtil.clickWhenReady(saveProfileButton, 50);
 		elementUtil.clickWhenReady(clickOk, 50);
 	}

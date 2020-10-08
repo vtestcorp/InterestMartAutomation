@@ -5,17 +5,19 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.qa.interestsmart.base.BaseTest;
-import com.qa.interestsmart.utils.ExcelUtil;
+import com.qa.interestsmart.model.User;
+
+import com.qa.interestsmart.utils.JsonUtil;
 
 public class TC_15_VerifyLoanApplicationInProgress extends BaseTest {
 	private static final Logger logger = LogManager.getLogger(TC_15_VerifyLoanApplicationInProgress.class);
 	@Test
 	public void TC_15_VerifyLoanApplicationAfterSearchStaus()
 	{
-		String oldPassword = prop.getProperty("validpassword1");	
-		String username = prop.getProperty("validusername1");
+		User loginDetails=new User();
+		loginDetails=JsonUtil.readUserFromFile("TC_15_verifyloanapplicationInProgress");
 		signInToApplication.loginWithValidUsernameAndPassword();		
-		signInToApplication.verifyLoanApplicationStatus(ExcelUtil.ReadCellData(3, 0,"Address"));		
+		signInToApplication.verifyLoanApplicationStatus(loginDetails.address);		
 	}
 
 }
