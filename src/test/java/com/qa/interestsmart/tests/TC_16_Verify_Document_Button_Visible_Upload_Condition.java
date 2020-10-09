@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.qa.interestsmart.base.BaseTest;
-import com.qa.interestsmart.model.AddressDetails;
+
 import com.qa.interestsmart.model.User;
 import com.qa.interestsmart.utils.JsonUtil;
 

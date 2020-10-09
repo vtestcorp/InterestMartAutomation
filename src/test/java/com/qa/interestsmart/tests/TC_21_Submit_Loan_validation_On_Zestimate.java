@@ -12,13 +12,13 @@ import com.qa.interestsmart.model.AllUserDetailsForLoanApplication;
 import com.qa.interestsmart.pages.SignInToApplication;
 import com.qa.interestsmart.utils.JsonUtil;
 
-public class TC_21_Submit_Loan_Pdf_Documents extends BaseTest{
-	private static final Logger logger = LogManager.getLogger(TC_21_Submit_Loan_Pdf_Documents.class);
+public class TC_21_Submit_Loan_validation_On_Zestimate extends BaseTest{
+	private static final Logger logger = LogManager.getLogger(TC_21_Submit_Loan_validation_On_Zestimate.class);
 	@Test
 	public void TC_21_Submit_Loan_PDF_Documents()
 	{
 	AllUserDetailsForLoanApplication details=new AllUserDetailsForLoanApplication();		
-	details=JsonUtil.allUserDetailsForLoanApplication("TC_21_Submit_Loan_Pdf_Document.json");
+	details=JsonUtil.allUserDetailsForLoanApplication("TC_21_Submit_Loan_validation_On_Zestimate.json");
 	
     	
     	signInToApplication.loginWithValidUsernameAndPassword(details.emailAddress,details.password);
@@ -36,11 +36,7 @@ public class TC_21_Submit_Loan_Pdf_Documents extends BaseTest{
 		signInToApplication.fill_LoanTerm(details.loanTerm);
 		signInToApplication.click_GoButton();
 		
-		signInToApplication.click_GetStartedButton();
-		signInToApplication.click_ContinueButton();
-		
-		loanDetails.enterSSN(details.ssn);
-		loanDetails.enterDOB(details.birthDate);
+		signInToApplication.validation_on_Zestimate(details.alertmessage);
 		
 	}
 

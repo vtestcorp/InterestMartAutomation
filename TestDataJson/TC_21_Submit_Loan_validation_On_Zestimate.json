@@ -1,0 +1,16 @@
+{
+	"firstName" : "sud42",
+	"lastName"	: "Singh",
+	"phoneNo":"903-962-6919",
+	"emailAddress":"sud42@gmail.com",
+	"password":"Testing@012",
+	"address": "505 Parnassus Avenue San Francisco, CA, USA",
+	"pincode": "38018",
+	"loanDate": "11/5/2019",
+	"loanTerm": "30 years",
+	"loanType": "Conventional",
+	"initialBalance": "1000",
+	"ssn":"123-45-6789",
+	"birthDate":"02/12/1991",
+	"alertmessage":"Please fill out estimated property value."
+}

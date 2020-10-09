@@ -1,0 +1,12 @@
+{
+	"firstName": "sud20",
+	"lastName": "Singh",
+	"phoneNo": "903-962-6866",
+	"emailAddress": "sud20@gmail.com",
+	"password": "Testing@01",
+	"address": "505 Parnassus Avenue, San Francisco, CA, 94143",
+	"filename":"testimage.png",
+	"conditionName":"Initial loan estimate",
+	"status":"Pending",
+	"updateStatus":"In Review"
+}

@@ -8,8 +8,9 @@ import java.io.InputStream;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.qa.interestsmart.model.AllUserDetailsForLoanApplication;
-
+import com.qa.interestsmart.model.PopUpDetails;
 import com.qa.interestsmart.model.User;
+import com.qa.interestsmart.model.UserDetailsUploadFile;
 import com.qa.interestsmart.model.UserDetailsWithUpdateDetails;
 
 import config.DefineConstants;
@@ -43,6 +44,19 @@ public class JsonUtil {
 		return user1;
 	}
 	
+	public static PopUpDetails popUpDetails(String filename)
+	{
+		PopUpDetails user1 = null;
+		File fileReader  = new File(DefineConstants.TestDataJson_Folder + "/" + filename);
+		try {
+			InputStream inputStream1 = new FileInputStream(fileReader);
+			user1 = mapper.readValue(inputStream1, PopUpDetails.class);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		return user1;
+	}
+	
 	public static UserDetailsWithUpdateDetails userDetailsWithUpdatedDetails(String filename)
 	{
 		UserDetailsWithUpdateDetails user1 = null;
@@ -56,4 +70,17 @@ public class JsonUtil {
 		return user1;
 	}
 	
+	public static UserDetailsUploadFile userDetailsUploadFile(String filename)
+	{
+		UserDetailsUploadFile user1 = null;
+		File fileReader  = new File(DefineConstants.TestDataJson_Folder + "/" + filename);
+		try {
+			InputStream inputStream1 = new FileInputStream(fileReader);
+			user1 = mapper.readValue(inputStream1,UserDetailsUploadFile.class);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		return user1;
+		
+	}
 }

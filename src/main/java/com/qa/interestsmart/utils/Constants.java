@@ -20,5 +20,6 @@ public class Constants {
 	
 	public static final String applicationSubmittedText = "Your application has been successfully Submitted. Our mortgage experts will contact you soon to discuss your options.";
 	
+	
 
 }

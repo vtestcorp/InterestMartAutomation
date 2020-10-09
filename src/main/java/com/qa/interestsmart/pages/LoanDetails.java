@@ -604,6 +604,8 @@ public class LoanDetails extends BasePage {
 			e.printStackTrace();
 		}
 	}
+	
+	
 
 	public void uploadDriverLicense(String filePath) {
 		try {

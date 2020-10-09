@@ -18,6 +18,8 @@ public class DefineConstants {
 
 	public static final String TestData_Folder = "Test_Data";
 	public static final String TestDataJson_Folder = "TestDataJson";
+	
+	public static final String Documents_Folder="Documents";
 
 	public static final String Mail_TestData_Folder = "Mail";
 

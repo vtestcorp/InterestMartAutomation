@@ -1,0 +1,12 @@
+{
+	"firstName" : "sud20",
+	"lastName":"Singh",
+	"phoneNo":"903-962-6866",
+	"emailAddress":"sud20@gmail.com",
+	"password":"Testing@01",
+	"updatefirstName" : "tempFirstName",
+	"updatelastName"	: "tempLastName",
+	"updatephoneNo":"903-963-6869",
+	"updateemailAddress":"sud26@gmail.com",
+	"updatepassword":"Testing@012"
+}

@@ -22,6 +22,8 @@ import com.qa.interestsmart.utils.ElementUtil;
 import com.qa.interestsmart.utils.JavaScriptUtil;
 import com.qa.interestsmart.utils.Keyboard;
 
+import config.DefineConstants;
+
 public class SignInToApplication extends BasePage {
 
 	private static final Logger logger = LogManager.getLogger(SignInToApplication.class);
@@ -103,8 +105,8 @@ public class SignInToApplication extends BasePage {
 	private By emailProfileDetail = By.id("email");
 	private By phoneProfileDetail = By.id("phone");
 	private By saveProfileButton = By.id("profile_save");
-	private By cancelProfileButton=By.id("reset_values");
-	
+	private By cancelProfileButton = By.id("reset_values");
+
 	private By updateProfileMessage = By.className("alert-data text-center");
 	private By clickOk = By.xpath("//button[contains(text(),'OK')]");
 	private By updatedpassword = By.id("password");
@@ -112,10 +114,22 @@ public class SignInToApplication extends BasePage {
 
 	private By clickContinue = By.id("property_exists_btn");
 	private By applicationMessage = By.xpath("//h1[contains(text(),'Application in progress')]");
-	
-	private By documentButton=By.xpath("//span[@class='blue-notification']");
-	private By documentButtonPendingCount=By.xpath("//label[@class='count']");
-	private By pendingItemCount=By.xpath("//span[@class='heading-count']");
+
+	private By documentButton = By.xpath("//span[@class='blue-notification']");
+	private By documentButtonPendingCount = By.xpath("//label[@class='count']");
+	private By pendingItemCount = By.xpath("//span[@class='heading-count']");
+
+	private By clickMessaages = By.xpath("//a[@class='table-btn-view view_condition']");
+	private By clickUploadDocs = By.xpath("//div[@class='upload-btn-rt']");
+	private By clickSubmit = By.xpath("//div[@class='upload-btn-rt']//following::button[1]");
+	private By clickOkButton = By.xpath("//div[@class='sa-confirm-button-container']//following::button[1]");
+
+	private By alertMessage = By.xpath("//p[@id='estimate_property_value-error']");
+
+	// PopUpDetails
+	private By popDetailsCategory = By.xpath("//p[@class='condition_submission_name']");
+	private By popDetailsStatus = By.xpath("//p[@class='condition_status_name']");
+	private By popDetailsCondition = By.xpath("//p[@class='condition_name']");
 
 	// Constructor of the page
 	public SignInToApplication(WebDriver driver) {
@@ -263,30 +277,27 @@ public class SignInToApplication extends BasePage {
 	}
 
 	public void verifyDocumentButton(String address) {
-		WebElement button=driver.findElement(By.xpath("//a[contains(text(),'"+address+"')]//following::span[1]"));
-		if(button.isDisplayed())
-		{
+		WebElement button = driver.findElement(By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]"));
+		if (button.isDisplayed()) {
 			Assert.assertTrue(true);
 		}
 
-		
 	}
-	
-	public void verifyConditionPendingCount(String address)
-	{
-		WebElement count=driver.findElement(By.xpath("//a[contains(text(),'"+address+"')]//following::span[1]//following::label[1]"));
-		String pendingCount=count.getText();
-		//if(count.getText()==1)
+
+	public void verifyConditionPendingCount(String address) {
+		WebElement count = driver.findElement(
+				By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]//following::label[1]"));
+		String pendingCount = count.getText();
+		// if(count.getText()==1)
 //		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
 //		logger.info("Document Button Condition Pending Count");
 //		Assert.assertEquals(pendingCount, "1");
 //		
 	}
-	
-	public void verifyDocumentButtonConditionPendingCountWithPendingItem()
-	{
-		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
-		String pendingItems=elementUtil.getElement(pendingItemCount).getText();
+
+	public void verifyDocumentButtonConditionPendingCountWithPendingItem() {
+		String pendingCount = elementUtil.getElement(documentButtonPendingCount).getText();
+		String pendingItems = elementUtil.getElement(pendingItemCount).getText();
 		logger.info("Document Button Condition PendingCount same with PendingItem");
 		Assert.assertEquals(pendingCount, pendingItems);
 	}
@@ -372,45 +383,107 @@ public class SignInToApplication extends BasePage {
 
 		elementUtil.clearField(emailProfileDetail);
 		elementUtil.doActionsSendKeys(emailProfileDetail, emailAddress);
-		
+
 		elementUtil.clickWhenReady(saveProfileButton, 20);
 		elementUtil.clickWhenReady(clickOk, 50);
 		logger.info("Your profile has been successfully updated");
 
 	}
 
-	public void verifyProfile(String firstName, String lastName, String phone,String emailAddress) {
-		
+	public void verifyProfile(String firstName, String lastName, String phone, String emailAddress) {
+
 		openUserProfile();
 		CommonUtil.shortWait();
-		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");		
+		String actualFirstName = elementUtil.getElement(firstNameProfileDetail).getAttribute("value");
 		String actualLastName = elementUtil.getElement(lastNameProfileDetail).getAttribute("value");
 		String actualPhone = elementUtil.getElement(phoneProfileDetail).getAttribute("value");
-		String actualEmail=elementUtil.getElement(emailProfileDetail).getAttribute("value");
-		
+		String actualEmail = elementUtil.getElement(emailProfileDetail).getAttribute("value");
+
 		assertEquals(firstName, actualFirstName);
 		assertEquals(lastName, actualLastName);
 		assertEquals(phone, actualPhone);
 		assertEquals(emailAddress, actualEmail);
-		
-		
+
 		elementUtil.clickWhenReady(saveProfileButton, 50);
 		elementUtil.clickWhenReady(clickOk, 50);
 	}
-	
 
-	public void verifySessionHasExpiredAfterTimeOut()
-	{
+	public void documentUploadAndCheckStaus(String address, String conditionName, String status, String filename,
+			String updatedStatus) {
+		WebElement button = driver.findElement(By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]"));
+
+		button.click();
+		CommonUtil.MediumWait();
+		WebElement pendingItemcondition = driver
+				.findElement(By.xpath("//td[contains(text(),'" + conditionName + "')]"));
+		String pendingItemName = pendingItemcondition.getText();
+		assertEquals(pendingItemName, conditionName);
+		WebElement pendingItemStatus = driver.findElement(By.xpath("//td[contains(text(),'Pending')]"));
+		String pendingItemStatusDetails = pendingItemStatus.getText();
+		assertEquals(pendingItemStatusDetails, status);
+
+		elementUtil.clickWhenReady(clickMessaages, 30);
+		CommonUtil.MediumWait();
+		elementUtil.doClick(clickUploadDocs);
+		Keyboard.uploadFileWithRobot(System.getProperty("user.dir") + "\\" + "Documents" + "\\" + filename);
+		CommonUtil.shortWait();
+		elementUtil.doClick(clickSubmit);
+		// javascriptutil.clickElementByJS(clickSubmit);
+		CommonUtil.shortWait();
+		elementUtil.doClick(clickOkButton);
+		CommonUtil.shortWait();
+		assertEquals(pendingItemName, conditionName);
+		WebElement updateResponse = driver.findElement(By.xpath("//td[contains(text(),'In Review')]"));
+		String updateResponseStatus = updateResponse.getText();
+		assertEquals(updateResponseStatus, updatedStatus);
+
+	}
+
+	public void document_toClick_messgaeConditiondetail_Pop_Up(String address, String category, String status,
+			String condition) {
+		WebElement button = driver.findElement(By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]"));
+
+		button.click();
+		CommonUtil.MediumWait();
+		WebElement pendingItemcategory = driver.findElement(By.xpath("//td[contains(text(),\"" + category + "\")]"));
+		String pendingItemcategoryName = pendingItemcategory.getText();
+
+		WebElement pendingItemcondition = driver.findElement(By.xpath("//td[contains(text(),'" + condition + "')]"));
+		String pendingItemName = pendingItemcondition.getText();
+
+		WebElement pendingItemStatus = driver.findElement(By.xpath("//td[contains(text(),'Pending')]"));
+		String pendingItemStatusDetails = pendingItemStatus.getText();
+
+		elementUtil.clickWhenReady(clickMessaages, 30);
+		CommonUtil.MediumWait();
+
+		 String popCategory=elementUtil.getElement(popDetailsCategory).getText();
+		String popStatus = elementUtil.getElement(popDetailsStatus).getText();
+		String popCondition = elementUtil.getElement(popDetailsCondition).getText();
+
+		 assertEquals(pendingItemcategoryName,popCategory);
+		assertEquals(pendingItemStatusDetails, popStatus);
+		assertEquals(pendingItemName, popCondition);
+
+	}
+
+	public void validation_on_Zestimate(String alretMessage) {
+		String actualMessage = elementUtil.getElement(alertMessage).getText();
+		assertEquals(actualMessage, alretMessage);
+	}
+
+	public void verifySessionHasExpiredAfterTimeOut() {
 		try {
 			Thread.sleep(480000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		driver.navigate().refresh();
-		String redirecturl=driver.getCurrentUrl();
-		Assert.assertEquals(redirecturl,Constants.SIGNIN_PAGE_URL);
+		String redirecturl = driver.getCurrentUrl();
+		Assert.assertEquals(redirecturl, Constants.SIGNIN_PAGE_URL);
 		System.out.println("");
 	}
+
 	public void checkUserLoginWithValidUsernameAndPasswordAndSignOutApplication(String username, String password) {
 		// elementUtil.clickWhenReady(signInButtonOnLandingPage, 20);
 		logger.info("Clicked on Sign In button on the landing page");
@@ -781,6 +854,7 @@ public class SignInToApplication extends BasePage {
 
 	public void fill_LoanDate(String Date) {
 		try {
+			CommonUtil.shortWait();
 			elementUtil.clickWhenReady(startDate, 20);
 			elementUtil.doActionsSendKeys(startDate, Date);
 			driver.findElement(startDate).sendKeys(Keys.ENTER);

@@ -15,6 +15,7 @@ public class AllUserDetailsForLoanApplication {
 	public String initialBalance;
 	public String ssn;
 	public String birthDate;	
+	public String alertmessage;
 
 
 }
