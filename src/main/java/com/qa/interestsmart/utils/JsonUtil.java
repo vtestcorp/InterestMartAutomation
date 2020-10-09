@@ -1,58 +1,59 @@
 package com.qa.interestsmart.utils;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.qa.interestsmart.model.AddressDetails;
-import com.qa.interestsmart.model.LoanDetails;
+
+import com.qa.interestsmart.model.AllUserDetailsForLoanApplication;
+
 import com.qa.interestsmart.model.User;
+import com.qa.interestsmart.model.UserDetailsWithUpdateDetails;
+
+import config.DefineConstants;
 
 public class JsonUtil {
+	static ObjectMapper mapper = new ObjectMapper();
 	public static User readUserFromFile(String filename) {
-		InputStream inputStream1 = JsonUtil.class.getClassLoader().getResourceAsStream(filename);
-
-		ObjectMapper mapper = new ObjectMapper();
-
 		User user1 = null;
+		File fileReader  = new File(DefineConstants.TestDataJson_Folder + "/" + filename);
 		try {
+			InputStream inputStream1 = new FileInputStream(fileReader);
 			user1 = mapper.readValue(inputStream1, User.class);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Exception e1) {
+			e1.printStackTrace();
 		}
 		return user1;
 	}
 	
-	public static AddressDetails readAddressfromFile(String filename)
+	
+	
+	public static AllUserDetailsForLoanApplication allUserDetailsForLoanApplication(String filename)
 	{
-		InputStream inputStream1 = JsonUtil.class.getClassLoader().getResourceAsStream(filename);
-
-		ObjectMapper mapper = new ObjectMapper();
-
-		AddressDetails user1 = null;
+		AllUserDetailsForLoanApplication user1 = null;
+		File fileReader  = new File(DefineConstants.TestDataJson_Folder + "/" + filename);
 		try {
-			user1 = mapper.readValue(inputStream1, AddressDetails.class);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return user1;
-		
-	}
-	public static LoanDetails readLoanDetailsfromFile(String filename)
-	{
-		InputStream inputStream1 = JsonUtil.class.getClassLoader().getResourceAsStream(filename);
-
-		ObjectMapper mapper = new ObjectMapper();
-
-		LoanDetails user1 = null;
-		try {
-			user1 = mapper.readValue(inputStream1, LoanDetails.class);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			InputStream inputStream1 = new FileInputStream(fileReader);
+			user1 = mapper.readValue(inputStream1, AllUserDetailsForLoanApplication.class);
+		} catch (Exception e1) {
+			e1.printStackTrace();
 		}
 		return user1;
 	}
+	
+	public static UserDetailsWithUpdateDetails userDetailsWithUpdatedDetails(String filename)
+	{
+		UserDetailsWithUpdateDetails user1 = null;
+		File fileReader  = new File(DefineConstants.TestDataJson_Folder + "/" + filename);
+		try {
+			InputStream inputStream1 = new FileInputStream(fileReader);
+			user1 = mapper.readValue(inputStream1, UserDetailsWithUpdateDetails.class);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		return user1;
+	}
+	
 }

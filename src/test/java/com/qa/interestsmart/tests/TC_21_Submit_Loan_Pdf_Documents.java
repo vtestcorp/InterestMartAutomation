@@ -5,9 +5,10 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.qa.interestsmart.base.BaseTest;
-import com.qa.interestsmart.model.AddressDetails;
-import com.qa.interestsmart.model.LoanDetails;
-import com.qa.interestsmart.model.User;
+
+import com.qa.interestsmart.model.AllUserDetailsForLoanApplication;
+
+
 import com.qa.interestsmart.pages.SignInToApplication;
 import com.qa.interestsmart.utils.JsonUtil;
 
@@ -16,28 +17,31 @@ public class TC_21_Submit_Loan_Pdf_Documents extends BaseTest{
 	@Test
 	public void TC_21_Submit_Loan_PDF_Documents()
 	{
-		User loginDetails=new User();
-		loginDetails=JsonUtil.readUserFromFile("TC_21_testdata1.json");
-    	AddressDetails addressDetails=new AddressDetails();
-    	addressDetails=JsonUtil.readAddressfromFile("TC_21_testdata_addressdetils.json");
-    	LoanDetails loanDetails=new LoanDetails();
-    	loanDetails=JsonUtil.readLoanDetailsfromFile("TC_21_testdata_loandetails.json");
+	AllUserDetailsForLoanApplication details=new AllUserDetailsForLoanApplication();		
+	details=JsonUtil.allUserDetailsForLoanApplication("TC_21_Submit_Loan_Pdf_Document.json");
+	
     	
-    	signInToApplication.loginWithValidUsernameAndPassword(loginDetails.emailAddress,loginDetails.password);
+    	signInToApplication.loginWithValidUsernameAndPassword(details.emailAddress,details.password);
     	
-    	signInToApplication.enterAddress(addressDetails.address);
-    	signInToApplication.enterZipCode(addressDetails.pincode);
+    	signInToApplication.enterAddress(details.address);
+    	signInToApplication.enterZipCode(details.pincode);
 		signInToApplication.selectAddress();
 		
-		signInToApplication.fill_LoanDate(loanDetails.loanDate);
-		signInToApplication.fill_LoanTerm(loanDetails.loanTerm);
-		signInToApplication.fill_LoanType(loanDetails.loanType);
-		signInToApplication.fill_InitialBalance(loanDetails.initialBalance);
+		signInToApplication.fill_LoanDate(details.loanDate);
+		signInToApplication.fill_LoanTerm(details.loanTerm);
+		signInToApplication.fill_LoanType(details.loanType);
+		signInToApplication.fill_InitialBalance(details.initialBalance);
+		
+		signInToApplication.fill_LoanType(details.loanType);
+		signInToApplication.fill_LoanTerm(details.loanTerm);
 		signInToApplication.click_GoButton();
 		
-//		signInToApplication.click_GetStartedButton();
-//		signInToApplication.click_ContinueButton();
-//		
+		signInToApplication.click_GetStartedButton();
+		signInToApplication.click_ContinueButton();
+		
+		loanDetails.enterSSN(details.ssn);
+		loanDetails.enterDOB(details.birthDate);
+		
 	}
 
 }

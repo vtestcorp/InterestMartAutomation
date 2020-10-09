@@ -268,18 +268,19 @@ public class SignInToApplication extends BasePage {
 		{
 			Assert.assertTrue(true);
 		}
-//		boolean visible=elementUtil.getElement(b).isDisplayed();
-//		logger.info("Document Button Visible Upload Condition");
-		//Assert.assertTrue(visible);
+
 		
 	}
 	
-	public void verifyConditionPendingCount()
+	public void verifyConditionPendingCount(String address)
 	{
-		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
-		logger.info("Document Button Condition Pending Count");
-		Assert.assertEquals(pendingCount, "1");
-		
+		WebElement count=driver.findElement(By.xpath("//a[contains(text(),'"+address+"')]//following::span[1]//following::label[1]"));
+		String pendingCount=count.getText();
+		//if(count.getText()==1)
+//		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
+//		logger.info("Document Button Condition Pending Count");
+//		Assert.assertEquals(pendingCount, "1");
+//		
 	}
 	
 	public void verifyDocumentButtonConditionPendingCountWithPendingItem()

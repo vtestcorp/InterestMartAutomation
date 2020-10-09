@@ -7,4 +7,5 @@ public class User {
 	public String emailAddress;
 	public String password;
 	public String  address;
+	public String pincode;
 }

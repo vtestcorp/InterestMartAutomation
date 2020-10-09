@@ -17,6 +17,7 @@ public class DefineConstants {
 	public static final String PROJECT_OS = System.getProperty("os.name");
 
 	public static final String TestData_Folder = "Test_Data";
+	public static final String TestDataJson_Folder = "TestDataJson";
 
 	public static final String Mail_TestData_Folder = "Mail";
 
