@@ -5,7 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.qa.interestsmart.base.BaseTest;
-import com.qa.interestsmart.model.User;
+
+import com.qa.interestsmart.model.UserDetailsWithPendingCountNo;
 import com.qa.interestsmart.utils.JsonUtil;
 
 public class TC_17_Verify_Document_Button_Condition_Pending_Count extends BaseTest {
@@ -13,8 +14,8 @@ public class TC_17_Verify_Document_Button_Condition_Pending_Count extends BaseTe
 	@Test
 	public void TC_17_VerifyDocumentButtonConditionPendingCount()
 	{
-		User loginDetails=new User();
-		loginDetails=JsonUtil.readUserFromFile("TC_17_verifydocumentbuttonpendingCount.json");
+		UserDetailsWithPendingCountNo loginDetails=new UserDetailsWithPendingCountNo();
+		loginDetails=JsonUtil.userDetailsWithPendingCountNo("TC_17_verifydocumentbuttonpendingCount.json");
 
 		signInToApplication.loginWithValidUsernameAndPassword(loginDetails.emailAddress,loginDetails.password);
 		signInToApplication.verifyConditionPendingCount(loginDetails.address);

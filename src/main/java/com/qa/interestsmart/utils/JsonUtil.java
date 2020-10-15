@@ -11,6 +11,7 @@ import com.qa.interestsmart.model.AllUserDetailsForLoanApplication;
 import com.qa.interestsmart.model.PopUpDetails;
 import com.qa.interestsmart.model.User;
 import com.qa.interestsmart.model.UserDetailsUploadFile;
+import com.qa.interestsmart.model.UserDetailsWithPendingCountNo;
 import com.qa.interestsmart.model.UserDetailsWithUpdateDetails;
 
 import config.DefineConstants;
@@ -77,6 +78,20 @@ public class JsonUtil {
 		try {
 			InputStream inputStream1 = new FileInputStream(fileReader);
 			user1 = mapper.readValue(inputStream1,UserDetailsUploadFile.class);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		return user1;
+		
+	}
+	
+	public static UserDetailsWithPendingCountNo userDetailsWithPendingCountNo(String filename)
+	{
+		UserDetailsWithPendingCountNo user1 = null;
+		File fileReader  = new File(DefineConstants.TestDataJson_Folder + "/" + filename);
+		try {
+			InputStream inputStream1 = new FileInputStream(fileReader);
+			user1 = mapper.readValue(inputStream1,UserDetailsWithPendingCountNo.class);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}

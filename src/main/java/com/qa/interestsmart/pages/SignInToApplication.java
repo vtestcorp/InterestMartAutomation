@@ -285,18 +285,21 @@ public class SignInToApplication extends BasePage {
 	}
 
 	public void verifyConditionPendingCount(String address) {
-		WebElement count = driver.findElement(
-				By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]//following::label[1]"));
+		WebElement count = driver.findElement(By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]//label[@class='count']"));
 		String pendingCount = count.getText();
 		// if(count.getText()==1)
 //		String pendingCount=elementUtil.getElement(documentButtonPendingCount).getText();
 //		logger.info("Document Button Condition Pending Count");
-//		Assert.assertEquals(pendingCount, "1");
+		Assert.assertEquals(pendingCount, "1");
 //		
 	}
 
-	public void verifyDocumentButtonConditionPendingCountWithPendingItem() {
-		String pendingCount = elementUtil.getElement(documentButtonPendingCount).getText();
+	public void verifyDocumentButtonConditionPendingCountWithPendingItem(String address) {
+		WebElement button = driver.findElement(By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]"));
+		button.click();
+		WebElement count = driver.findElement(By.xpath("//a[contains(text(),'" + address + "')]//following::span[1]//label[@class='count']"));
+		String pendingCount = count.getText();
+		//String pendingCount = elementUtil.getElement(documentButtonPendingCount).getText();
 		String pendingItems = elementUtil.getElement(pendingItemCount).getText();
 		logger.info("Document Button Condition PendingCount same with PendingItem");
 		Assert.assertEquals(pendingCount, pendingItems);
